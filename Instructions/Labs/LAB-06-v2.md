@@ -258,7 +258,7 @@ In this task, you will get a quick introduction to working with time series data
 
     ![](./media2/lab06img21.png)
 
-1. Navigate back to Azure Data Explorer pane and select **Query** and run the following query to visualize the data that is streamed.
+1. Select **Query** and run the following query to visualize the data that is streamed.
 
     ```
     Telemetry
