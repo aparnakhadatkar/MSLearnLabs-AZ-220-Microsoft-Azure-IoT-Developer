@@ -29,8 +29,7 @@ You plan to implement features of IoT Hub that enable automatic device managemen
 In this lab, you will complete the following:
 
 - Task 1: Configure Lab Prerequisites
-- Task 2: Examine code for a simulated device that implements firmware update
-- Task 3: Test firmware update on a single device
+- Task 2: Test firmware update on a single device
 
 ## Architecture Diagram
 
@@ -56,9 +55,9 @@ In this task, you'll set up your Azure IoT environment by accessing your resourc
 
    ![](./media/iot3.png)
 
-### Task 2: Examine code for a simulated device that implements firmware update
+### Task 2: Test firmware update on a single device
 
-In this task, you'll review code for a simulated device that supports firmware updates. Open Visual Studio Code, navigate to the `fwupdatedevice` project folder, and examine the `Program.cs` file, focusing on the device connection string needed for running the app.
+In this task, you'll test a firmware update by running the `FWUpdateDevice` app with your device connection string. After observing the initial firmware version, create a firmware update configuration in the Azure portal. Then, monitor the terminal for progress on the firmware update.
 
 1. Open **Visual Studio Code** from the desktop.
 
@@ -80,24 +79,6 @@ In this task, you'll review code for a simulated device that supports firmware u
    - Program.cs
 
       ![](./media/az11-81.png)
-
-1. In the EXPLORER pane, to open the project file, click **FWUpdateDevice.csproj**. Notice the referenced NuGet packages:
-
-      - Microsoft.Azure.Devices.Client - Device SDK for Azure IoT Hub
-      - Microsoft.Azure.Devices.Shared - Common code for Azure IoT Device and Service SDKs
-      - Newtonsoft.Json - Json.NET is a popular high-performance JSON framework for .NET
-
-           ![](./media/az22022.png)
-
-1. Navigate to **Program.cs** and at the top of the code file, locate the code comment line that begins with **The device connection string**.
-   
-      > **Note**: You will supply the device connection string value as a parameter when you enter the command to run the app later in this lab.
-
-      ![](./media/az22024.png)
-
-### Task 3: Test firmware update on a single device
-
-In this task, you'll test a firmware update by running the `FWUpdateDevice` app with your device connection string. After observing the initial firmware version, create a firmware update configuration in the Azure portal. Then, monitor the terminal for progress on the firmware update.
 
 1. In Vs code, click on **Terminal (1)** and click on **New Terminal (2)**. The folder location shown within the command prompt should show the FWUpdateDevice project folder.
 
@@ -179,4 +160,4 @@ In this task, you'll test a firmware update by running the `FWUpdateDevice` app 
 ## Summary
 In this lab, you have configured Lab Prerequisites, examined code for a simulated device that implements firmware update and tested firmware update on a single device.
 
-### You have successfully completed the lab
+### You have successfully completed the lab!
