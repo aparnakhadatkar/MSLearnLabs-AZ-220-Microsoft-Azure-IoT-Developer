@@ -46,11 +46,11 @@ In this task, you will use Azure IoT Hub to create a new IoT Edge device identit
 
    ![](./media/lab12img1.png)
 
-1. On the **IoT Hub** blade, on the left-side menu under **Device management**, click **IoT Edge**. On the IoT Edge pane, click **Add an IoT Edge device**.
+1. On the **IoT Hub** blade, on the left-side menu under **Device management**, click **IoT Edge**. On the IoT Edge pane, click **+ Add an IoT Edge device**.
 
    ![](./media/lab12img3.png)
 
-1. On the **Create a device** blade, in the **Device ID** field, enter **sensor-<inject key="DeploymentID" enableCopy="false" />** **(1)**, let **IoT Edge Device** checkbox selected if not selected by default. Leave other setting as default and click on **save (2)**.
+1. On the **Create a device** blade, in the **Device ID** field, enter **sensor-<inject key="DeploymentID" enableCopy="false" />** **(1)**, let **IoT Edge Device** checkbox selected if not selected by default. Leave other setting as default and click on **Save (2)**.
 
    ![](./media/new-az-220-lab8-099.png)
 
@@ -114,8 +114,8 @@ https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.
     | Admin Username | Provide the name as **vmadmin (8)** |
     | Authentication Type | Select **Password (9)** |
     | Admin Password Or Key | Provide the password as **Password!123** **(10)** |
-    | Allow SSH | **True (11)** |
-    | Click | **Review + Create (12)** |
+    | Allow SSH | **true (11)** |
+    | Click | **Review + create (12)** |
 
      ![](./media/az8-16.png)
 
@@ -127,19 +127,17 @@ https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.
 
    ![](./media/az8-20.png)
 
-1. Navigate to **Overview (1)** and click on **Go to resource group (2)**.
-
-   ![](./media/az8-19.png)
+1. Go to the resource group **az220rg-<inject key="DeploymentID" enableCopy="false"/>**.
    
 1. On the **All resources** tile, click on network security group named as **nsg-vm-az220-training-gw0001-<inject key="DeploymentID" enableCopy="false" />**.
  
    ![](./media/lab12img10.png)
 
-1. On the **Network security group** blade, on the left-side menu under **Settings**, click **Inbound security rules**. At the top of the **Inbound security rules** pane, click on **Add**.
+1. On the **Network security group** blade, on the left-side menu under **Settings**, click **Inbound security rules**. At the top of the **Inbound security rules** pane, click on **+ Add**.
 
    ![](./media/lab12img11.png)
 
-1. On the **Add inbound security rule** pane, ensure the following values are added and then click on **Add (4)**.
+1. On the **Add inbound security rule** pane, ensure the following values are added and then click on **+ Add (4)**.
 
     | Settings | Values |
     |  -- | -- |
@@ -206,7 +204,7 @@ In this task, you will verify that your Linux VM (IoT edge) device is deployed s
     |  -- | -- |
     | Subscription | **Select the default subscription (1)** |
     | Resource Group | **Select the existing resource group (2)** |
-    | Region | Select **EAST US (3)** |
+    | Region | Select **<inject key="Region" enableCopy="false"/> (3)** |
     | Storage Account Name | Provide the name as **stoaz220<inject key="DeploymentID" enableCopy="false"></inject>** **(4)** |
     | File Share | Provide the name as **cloudshell (5)** |
 
@@ -216,7 +214,7 @@ In this task, you will verify that your Linux VM (IoT edge) device is deployed s
 
     > **Note**: Both *Bash* and *PowerShell* interfaces for the Azure Cloud Shell support the use of **OpenSSL**.
 
-1. Navigate to the virtual machine **vm-az220-training-gw0001-<inject key="DeploymentID" enableCopy="false" />**, copy the DNS name, add **vmadmin@** as a prefix, and paste the **ssh** command you saved in your text editor. Then press **Enter**. The command should resemble the following:
+1. Navigate to the virtual machine **vm-az220-training-gw0001-<inject key="DeploymentID" enableCopy="false" />**, copy the DNS name, add **vmadmin@** as a prefix, and paste the **ssh** command in cloudshell. Then press **Enter**. The command should resemble the following:
   
     - **ssh vmadmin@vm-az220-training-edge0001-dm080321.centralus.cloudapp.azure.com**.
 
@@ -231,7 +229,7 @@ In this task, you will verify that your Linux VM (IoT edge) device is deployed s
 1. Once connected, the terminal will change to show the name of the Linux VM that you are connected to. The command prompt will now look similar to the following:
 
     ``` bash
-    username@vm-az220-training-gw0001-<inject key="DeploymentID" enableCopy="false" />:~$
+    vmadmin@vm-az220-training-gw0001-<inject key="DeploymentID" enableCopy="false" />:~$
     ```
 
 1. To determine the virtual machine's public IP address, enter the following command:
@@ -288,7 +286,7 @@ In this task, you will explore the IoT edge configuration inside your vm. During
 1. The output will be similar to:
 
     ```s
-        [provisioning]
+    [provisioning]
     source = "manual"
     connection_string = "HostName=iot-az220-training-dm080221.azure-devices.net;DeviceId=sensor-th-0067;SharedAccessKey=2Zv4wruDViwldezt0iNMtO1mA340tM8fnmxgoQ3k0II="
 
@@ -406,7 +404,7 @@ Next, you need to "download" the **MyEdgeDeviceCA** certificate from the **vm-az
 1. You should see the following files listed:
 
     ```bash
-    certGen.sh  csr        index.txt.attr      index.txt.old  openssl_root_ca.cnf  serial
+     csr      index.txt.attr      index.txt.old  openssl_root_ca.cnf  serial
     certs       index.txt  index.txt.attr.old  newcerts       private              serial.old
     ```
 
@@ -432,7 +430,7 @@ In this task, you will create a new IoT device identity in Azure IoT Hub for the
 
      ![](./media/lab12img1.png)
 
-1. On the **iot-az220-training-<inject key="DeploymentID" enableCopy="false" />** blade, on the left-side menu under **Device management**, click **Devices**. To begin configuring a new IoT device, click **Add Device**.
+1. On the **iot-az220-training-<inject key="DeploymentID" enableCopy="false" />** blade, on the left-side menu under **Device management**, click **Devices**. To begin configuring a new IoT device, click **+ Add Device**.
 
      ![](./media/lab12img14.png)
 
@@ -482,7 +480,7 @@ In this task, you will add the required entry to the hosts file.
 
 1. Open **Visual Studio Code** from the desktop.
 
-1. On the **File** menu, click **Open File**.
+1. On the **File** menu, click **Open Folder**.
 
 1. Navigate to the following folder location: `C:\Windows\System32\drivers\etc\`, and then open the **hosts** file.
 
@@ -494,7 +492,7 @@ In this task, you will add the required entry to the hosts file.
     {VM Public IP Address} vm-az220-training-gw0001-{your-id}
     {blank line}
     ```
-
+    >**Note**: Be sure to replace the **{your-id}** with **<inject key="DeploymentID" enableCopy="true" />**.
     For example,
 
     ```text
@@ -544,7 +542,9 @@ In this task, you will connect the IoT edge device to the IoT Edge Gateway.
 
     > **Information**: You can learn more about the **X509Store** class [here](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.1).
 
-1. On the **Terminal** menu, click **New Terminal**.
+1. Open **New terminal** in **Visual Studio Code** by selecting **Three dots(...) -> Terminal -> New Terminal**.
+
+    ![](./media2/lab09img3.png)
 
 1. At the TERMINAL command prompt, enter the following command:
 
@@ -642,4 +642,4 @@ In this task, you will use the Azure CLI to monitor the events being sent to Azu
 
 In this lab, you have created a Linux based Virtual Machine as an IoT Edge Device. and you have connected to that VM and check regarding IoT edge modules and download CA certificate and created a downstream device.
 
-## You have successfully completed this Lab
+## You have successfully completed this Lab!
