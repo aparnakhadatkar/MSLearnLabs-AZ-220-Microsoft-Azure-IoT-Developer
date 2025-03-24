@@ -153,6 +153,8 @@ In this task, you will be using Visual Studio Code setup the IoT Edge Solution.
 
       ![](./media2/lab13img14.png)
 
+      > **Note:** Please ensure to provide a space after **Azure IoT Edge:** 
+
      >**Note:** If the option is unavailable, navigate to **Extensions (1)**, search for **Azure IoT Tools (2)**, select it, and click **Install (3)**. After installation, please re-perform Task 1.
 
       ![](./media/extension.png)
