@@ -93,6 +93,7 @@ In this task, you will create a Container Registry from Azure Portal.
     |  -- | -- |
     | **Resource group** | Select **az220rg-<inject key="DeploymentID" enableCopy="false" />** resource group **(1)** |
     | **Registry name** |**acraz220trainingcah<inject key="DeploymentID" enableCopy="false" />** **(2)**|
+    | **Location** | **Select the default location** |
     | **Pricing Plan** | **Standard (3)** |
    
       ![](./media2/lab09img2updated.png)
