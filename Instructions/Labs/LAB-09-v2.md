@@ -149,6 +149,8 @@ In this exercise, you will create an Azure IoT Edge Solution that contains a cus
 
    ![](../media2/lab13img14.png)
 
+      > **Note:** Please ensure to provide a space after **Azure IoT Edge:** 
+
 1. Browse to the folder where you want to create the new solutions, and then click **Select folder**.
 
 1. When prompted for a solution name, enter **EdgeSolution**
