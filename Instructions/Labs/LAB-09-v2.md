@@ -42,13 +42,9 @@ In this exercise, you will ensure docker engine is running and install the Azure
 
    ![](./media2/lab13img2.png)
 
-   ![](./media2/new-az220-lab9-1.png)
-
-1. In **Welcome to Docker** pane click on **skip** to skip all the panes.
+1. In **Welcome to Docker** pane, click on **skip** to skip all the panes.
 
    ![](./media2/lab13img3.png)
-
-   ![](./media2/new-az220-lab9-2.png)
 
 1. Wait for sometime in the  **docker desktop**, ensure that **Engine running** status as shown. Close the docker desktop, continue with further steps.
 
