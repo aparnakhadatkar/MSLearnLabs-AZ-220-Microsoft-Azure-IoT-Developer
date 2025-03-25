@@ -356,7 +356,7 @@ In this exercise, you will build and publish the custom IoT Edge Module into the
 
 1. Open integrated Terminal in **Visual studio code** click on **Three dots(...) >> Terminal(1)** and then **New Terminal(2).**
 
-   ![](./media/az-3-10.png)
+      ![](./media/az-3-10.png)
 
 1. On the terminal, run commands to tag and push the image to **Azure Container Registries**.
 
