@@ -156,7 +156,7 @@ In this task, you will be using Visual Studio Code setup the IoT Edge Solution.
 
       ![](./media/extension.png)
 
-1. Browse to the folder `C:\Labfiles`, and then click **Select folder**.
+1. Navigate to `C:\Labfiles`, create a folder with the name **EdgeSolution** and then click on **Select folder**.
 
 1. When prompted for a solution name, enter **EdgeSolution**. This name will be used as the directory name for the new **IoT Edge Solution** that will be created. Then, click **Enter**.
 
