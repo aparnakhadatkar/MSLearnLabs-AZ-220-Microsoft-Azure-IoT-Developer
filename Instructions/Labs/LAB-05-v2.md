@@ -155,7 +155,7 @@ In this task, you configure a Logic App in Azure to send an email notification w
 
 1. Click **Add an operation** and in the search textbox, enter **Outlook.com**
 
-1. In the list of Actions, scroll down to the **Office 365 Outlook**, and then click **Send an email (V2)**.
+1. In the list of Actions, search for **Send an email (V2)** and scroll down to the **Office 365 Outlook**, and then click **Send an email (V2)**.
 
       ![](media/az5-4.png)
 
