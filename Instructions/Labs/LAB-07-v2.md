@@ -213,6 +213,8 @@ https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.
     √ container on the IoT Edge module network can connect to IoT Hub MQTT port - OK
     ```
 
+      >**Note:** If you see any errors while executing the above command, please ignore and proceed further.
+
       > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
       > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
@@ -472,7 +474,7 @@ Now that the tempSensor module is deployed and running on the IoT Edge device, w
 
       ![](./media/az11-1.png)
       
-1. Replace the default route defined with the following three routes and click on **Review + create**. Replace the <DID> with the `<inject key="DeploymentID" enableCopy="false"/>` used in the lab.
+1. Replace the default route defined with the following three routes and click on **Review + create**. Replace the **<DID>** with the **<inject key="DeploymentID" enableCopy="false"></inject>** used in the lab.
 
       - Route 1
           * NAME: **`telemetryToCloud`** **(1)**
