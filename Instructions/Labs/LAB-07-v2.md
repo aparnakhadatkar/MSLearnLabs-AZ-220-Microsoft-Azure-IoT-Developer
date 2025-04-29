@@ -289,7 +289,8 @@ When a new module instance is created by the IoT Edge runtime, it gets a corresp
      ![](./media/az11-17.png)
 
     > **Note**: If the value is still not reported, or if an error is reported, wait a moment and then refresh the blade again.
-    >             ![](./media/error-1703.png)
+
+     ![](./media/error-1703.png)
 
 ### Task 2: Confirm module deployment
 
