@@ -356,7 +356,7 @@ Now that the tempSensor module is deployed and running on the IoT Edge device, w
        - Subscription: **Select the default subscription (1)**
        - Resource Group: **Select the existing resource group (2)**
        - Storage Account Name: Provide the name as **az220store<inject key="DeploymentID" enableCopy="false"></inject>** **(3)**
-       - Region: Select **<inject key="Region" enableCopy="false"/> (4)**
+       - Region: Select **<inject key="Region" enableCopy="false"/></inject> (4)**
        - Performance: **Standard (5)**
        - Redundancy: **Locally-redundant storage (LRS) (6)** 
        - Click on **Review + create (7)**
