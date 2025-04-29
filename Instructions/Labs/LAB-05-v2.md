@@ -8,7 +8,7 @@ In this lab, you will create a Logic App resource in Azure and configure it to t
 
 Contoso management is impressed with the prototype solutions that you've created using Azure IoT services, and they feel comfortable assigning additional budget the capabilities that you have already demonstrated. They are now asking that you explore the integration of certain operational support capabilities. Specifically, they would like to see how the Azure tools support sending alert notifications to the managers who are responsible for specific work areas. Alert criteria will be defined by the business area managers. The telemetry data arriving at the IoT hub will be evaluated to generate the notifications.
 
-You've identified a business manager, Nancy, with whom you've had success working in the past. You'll work with her during the initial phase of your solution.
+You've identified a business manager, Nancy, that you've had success working with in the past. You'll work with her during the initial phase of your solution.
 
 Nancy informs you that her team of facility technicians is responsible for installing the new connected thermostats that will be used to monitor temperature across different cheese caves. The thermostat devices function as IoT devices that can be connected to an IoT hub. To get your project started, you agree to create an alert that will generate a notification when a new device has been implemented.
 
