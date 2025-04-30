@@ -166,23 +166,21 @@ https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.
 
 1. The IoT Edge security subsystem includes a set of native components that need to be updated using the package manager on the IoT Edge device. Run the below command for updating IoT Edge:
 
-      >**Note:** Enter Y, if you see any prompt **Do you want to continue? [Y/n]**
-
     ``` bash
     wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
     sudo dpkg -i packages-microsoft-prod.deb
     rm packages-microsoft-prod.deb
     ```
-    ```bash
+      >**Note:** If prompted to **Do you want to continue? [Y/n]**, type Y.
+
+   ```bash
     sudo apt-get update
     sudo apt-get install moby-engine
-    ```
-    ``` bash
-    sudo apt-get update
-    ```
-    ``` bash
     sudo apt-get install aziot-edge
     ```
+
+      >**Note:** If prompted to **Do you want to continue? [Y/n]**, type Y.
+   
     ``` bash
     sudo iotedge config apply
     ```
