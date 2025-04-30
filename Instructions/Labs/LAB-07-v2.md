@@ -297,11 +297,11 @@ When a new module instance is created by the IoT Edge runtime, it gets a corresp
 
 1. Notice that the **RUNTIME STATUS** for the **tempsensor** module is now set to **running**.
 
-     ![](./media/az11-17.png)
+     ![](./media/sensor1.png)
 
     > **Note**: If the value is still not reported, or if an error is reported, wait a moment and then refresh the blade again.
 
-     ![](./media/error-1703.png)
+     ![](./media/sensor2.png)
 
 ### Task 2: Confirm module deployment
 
