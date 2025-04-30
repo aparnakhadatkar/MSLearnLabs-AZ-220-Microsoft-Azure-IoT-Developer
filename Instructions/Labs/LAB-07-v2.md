@@ -247,7 +247,7 @@ When a new module instance is created by the IoT Edge runtime, it gets a corresp
    
 1. Scroll to the bottom of the **sensor-th-0067** blade. Scroll down to find the **Modules (1)** section and notice the list of the modules currently configured for the device. At the top of the **sensor-th-0067** blade, click **Set Modules (2)**.
 
-    ![](./media/new-az220-lab7-4.png)
+    ![](./media/sensor.png)
 
 1. On the **Set modules on device: **sensor-th-0067** blade**, locate the **IoT Edge Modules** section. Click **+ Add**, and then select **+ IoT Edge Module**.
 
