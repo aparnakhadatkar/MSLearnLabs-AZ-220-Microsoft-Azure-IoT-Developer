@@ -125,14 +125,14 @@ https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.
     | Virtual Machine Name | Provide the name as **vm-az220-training-edge0001-<inject key="DeploymentID" enableCopy="false"></inject>** **(4)** |
     | Device Connection string | Paste the **device primary connection string** you copied earlier in your notepad **(5)** |
     | Virtual Machine Size | **Standard_DS1_v2 (6)** |
-    | Ubuntu OS Version | **18.04-LTS (7)** |
+    | Ubuntu OS Version | **22_04-lts-gen2 (7)** |
     | Admin Username | Provide the name as **demouser (8)** |
     | Authentication Type | Select **Password (9)** |
     | Admin Password Or Key | Provide the password as **Password!123** **(10)** |
     | Allow SSH | **true (11)** |
     | Click on | **Review + create (12)** |
 
-      ![](./media/az11-29.png)
+      ![](./media/az11-29upd.png)
 
 1. Once validation is passed, click on **Create**.
 
@@ -166,6 +166,17 @@ https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.
 
 1. The IoT Edge security subsystem includes a set of native components that need to be updated using the package manager on the IoT Edge device. Run the below command for updating IoT Edge:
 
+      >**Note:** Enter Y, if you see any prompt **Do you want to continue? [Y/n]**
+
+    ``` bash
+    wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    sudo dpkg -i packages-microsoft-prod.deb
+    rm packages-microsoft-prod.deb
+    ```
+    ```bash
+    sudo apt-get update
+    sudo apt-get install moby-engine
+    ```
     ``` bash
     sudo apt-get update
     ```
